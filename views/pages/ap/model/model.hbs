@@ -1,0 +1,56 @@
+{{> header }}
+<div class="flex-container panel-body">
+    <div class="textedit flex-container content-block">
+        <div class="place flex-container content-block">
+            <span class="smallfont">Alias</span>
+            <small class="label">{{model.alias}}</small>
+            <span class="smallfont">Name</span>
+            <small class="label">{{model.name}}</small>
+        </div>
+    </div>
+
+    <div class="tabs flex-container content-block">
+
+        {{#if baseUser.permissionsObject.read}}
+            <a href="{{routePath}}/{{model.firm_id}}/model/edit/{{model.id}}" class="edittab btn-success btn">Edit</a>
+            <button onclick="showModal('Confirm deleting model: <b>{{model.alias}}</b>', '{{routePath}}/{{model.firm_id}}/model/delete/{{model.id}}'); event.stopPropagation()"
+                    class="deltab btn-danger btn btn-lg">Delete
+            </button>
+        {{/if}}
+
+    </div>
+</div>
+
+<div class="flex-container content-block">
+
+    {{#if sneakers}}
+        <table>
+            <tr>
+                <th class="description">ALIAS</th>
+                <th class="description">NAME</th>
+                <th class="description">PRICE</th>
+                <th></th>
+            </tr>
+            <tr class="block-link"></tr>
+
+            {{#each sneakers}}
+                <tr onClick="window.location.href='{{../routePath}}/{{../firm_id}}/model/{{../model.id}}/sneakers/{{id}}';" class="compaings-content trlink">
+                    <td>{{alias}}</td>
+                    <td>{{name}}</td>
+                    <td>{{price}}</td>
+                    <td>
+                        {{#if ../baseUser.permissionsObject.read}}
+                            <a href="{{../routePath}}/{{../firm_id}}/model/{{../model.id}}/sneakers/edit/{{id}}" onclick="event.stopPropagation()"
+                               class="redcrossx-div"><img src="images/points.png"></a>
+                            <a onclick="showModal('Confirm deleting sneaker: <b>{{name}}</b>', '{{../routePath}}/{{../firm_id}}/model/{{../model.id}}/sneakers/delete/{{id}}'); event.stopPropagation()"
+                               class="redcrossx-div"><img src="images/crossx.png"></a>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr class="block-link2"></tr>
+            {{/each}}
+
+        </table>
+    {{/if}}
+
+</div>

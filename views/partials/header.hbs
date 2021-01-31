@@ -1,0 +1,45 @@
+<div class="flex-container header">
+    <div class="flex-container left-side-header">
+        <div class="logo">
+            <a href="/">
+                <span class="storm">
+                    <img src="images/logo.svg">
+                </span>
+            </a>
+            <div class="greylogo">
+
+                {{#each crumbs}}
+                    <a href="{{this.path}}">{{this.name}}</a>
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+    <div class="flex-container right-side-header">
+
+        {{#if baseUser.permissionsObject.sudo}}
+            <div>
+                <a href="{{addLink}}" {{#if addBlank}}target="_blank"{{/if}}>
+                    <li class="btn btn-danger btn-lg">{{addText}}</li>
+                </a>
+            </div>
+            {{#if addModelLink}}
+            <div>
+                <a href="{{addModelLink}}" {{#if addBlank}}target="_blank"{{/if}}>
+                    <li class="btn btn-danger btn-lg">{{addModelText}}</li>
+                </a>
+            </div>
+            {{/if}}
+            {{#if addSneakersLink}}
+                <div>
+                    <a href="{{addSneakersLink}}" {{#if addBlank}}target="_blank"{{/if}}>
+                        <li class="btn btn-danger btn-lg">{{addSneakersText}}</li>
+                    </a>
+                </div>
+            {{/if}}
+        {{/if}}
+
+        <span class="useractive"><b>{{baseUser.login}}</b></span>
+        <button class="btn btn-info filter"><a href="/logout" class="filt"><img src="images/exit.png"></a></button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{
+  "development": {
+    "PORT": "2500",
+    "DB_LOGIN": "",
+    "DB_PASSWORD": "",
+    "DB_SCHEME": "mongodb://",
+    "DB_NAME": "",
+    "DB_SESSIONS_NAME": "",
+    "DB_URL": "",
+    "JWT_SECRET": "",
+    "MONGO_SECRET": "",
+    "RENEW_TOKEN_URL" : "http://localhost:8000/api/v1/tokens/renew",
+    "ESTORM_LOGIN_URL": "http://localhost:8000/login/",
+    "ESTORM_TOKEN_CHECK_URL": "http://localhost:8000/api/v1/tokens/redirect/",
+    "SERVICES_API_URL": "http://localhost:7000/api/v1",
+    "SERVICES_SERVER_URL": "http://localhost:7000"
+  }
+,
+  "production":{
+    "PORT": "8000",
+    "DB_LOGIN": "",
+    "DB_PASSWORD": "",
+    "DB_SCHEME": "mongodb://",
+    "DB_NAME": "",
+    "DB_SESSIONS_NAME": "",
+    "DB_URL": "",
+    "JWT_SECRET": "",
+    "MONGO_SECRET": "",
+    "RENEW_TOKEN_URL" : "http://auth.estorm.xyz/api/v1/tokens/renew",
+    "ESTORM_LOGIN_URL": "http://auth.estorm.xyz/login/",
+    "ESTORM_TOKEN_CHECK_URL": "http://auth.estorm.xyz/api/v1/tokens/redirect/",
+    "SERVICES_API_URL": "http://services.estorm.xyz/api/v1",
+    "SERVICES_SERVER_URL": "http://services.estorm.xyz"
+
+  }
+
+}

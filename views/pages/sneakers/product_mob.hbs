@@ -1,0 +1,635 @@
+{{> sneakers_header_mob }}
+
+<!-- Basic product page -->
+<div class="content_page_1" id="basic_page">
+    <div style="display:none;" id="sneakerId">{{sneakers.id}}</div>
+    <div style="display:none;" id="firmAlias">{{firm.alias}}</div>
+    <div style="display:none;" id="modelAlias">{{model.alias}}</div>
+    <div style="display:none;" id="sneakerAlias">{{sneakers.alias}}</div>
+    <!-- Path to basic page -->
+    <div class="path" id="basic_path">
+        <span>{{firm.name}} {{model.name}}</span>
+    </div>
+    <!--   -->
+    <div class="product_container">
+        <div class="changed">
+            <div class="product" >
+                <div class="main-carousel">
+                    {{#each sneakers.photosSmall}}
+                        {{#ifCond @index "==" 0}}
+                            <div class="carousel-cell"><img src="{{this}}"></div>
+                        {{else}}
+                            <div class="carousel-cell"><img style="display:none;" src="{{this}}"></div>
+                        {{/ifCond}}
+
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="product_choise column flex-container" id="basic_product">
+            <div class="product_propose">
+                <h1>{{firm.name}} {{model.name}} <br>{{sneakers.name}}</h1>
+            </div>
+            <div class="prise">
+                <span class="old_prise"><s><sup>$</sup>{{sneakers.fakePrice}}</s></span><span
+                    class="new_prise"><sup>$</sup>{{sneakers.price}}</span><span class="discount"><a
+                    href="">Save 30% today</a></span>
+            </div>
+            <div class="propose_desc">
+                <p>The shoes are made using authentic shoes, no fakes or b-grades. Each shoe is hand painted and made to order. <b>Free shipping today</b>.</p>
+            </div>
+            <div>
+                <div class="size_block" id="allSizes">
+                    <select onchange="selectSize(this)" class="custom-select">
+                        <option value="">Select size</option>
+                        <option value="1">Men</option>
+                        <option value="2">Women</option>
+                        <option value="3">Kids</option>
+                    </select>
+                </div>
+
+                <div class="size_block" id="KidsSizes" style="display:none">
+                    <select onchange="setSize(this)" class="custom-select">
+                        <option value="" selected>Select size</option>
+                        <option value="2Y"><b>2Y </b>US</option>
+                        <option value="2.5Y"><b>2.5Y </b>US</option>
+                        <option value="3Y"><b>3Y </b>US</option>
+                        <option value="3.5Y"><b>3.5Y </b>US</option>
+                        <option value="4Y"><b>4Y </b>US</option>
+                        <option value="4.5Y"><b>4.5Y </b>US</option>
+                        <option value="5Y"><b>5Y </b>US</option>
+                        <option value="5.5Y"><b>5.5Y </b>US</option>
+                        <option value="6Y"><b>6Y </b>US</option>
+                        <option value="6.5Y"><b>6.5Y </b>US</option>
+                        <option value="7Y"><b>7Y </b>US</option>
+                        <option value="5C"><b>5C </b>US</option>
+                        <option value="6C"><b>6C </b>US</option>
+                        <option value="7C"><b>7C </b>US</option>
+                        <option value="8C"><b>8C </b>US</option>
+                        <option value="9C"><b>9C </b>US</option>
+                        <option value="10C"><b>10C </b>US</option>
+                    </select>
+                </div>
+                <div class="size_block" id="WomenSizes" style="display:none">
+                    <select onchange="setSize(this)" class="custom-select">
+                        <option value="" selected>Select size</option>
+                        <option value="5"><b>5 </b>US</option>
+                        <option value="5.5"><b>5.5 </b>US</option>
+                        <option value="6"><b>6 </b>US</option>
+                        <option value="6.5"><b>6.5 </b>US</option>
+                        <option value="7"><b>7 </b>US</option>
+                        <option value="7.5"><b>7.5 </b>US</option>
+                        <option value="8"><b>8 </b>US</option>
+                        <option value="8.5"><b>8.5 </b>US</option>
+                        <option value="9"><b>9 </b>US</option>
+                        <option value="9.5"><b>9.5 </b>US</option>
+                        <option value="10"><b>10 </b>US</option>
+                        <option value="10.5"><b>10.5 </b>US</option>
+                        <option value="11"><b>11 </b>US</option>
+                        <option value="11.5"><b>11.5 </b>US</option>
+                        <option value="12"><b>12 </b>US</option>
+                        <option value="12.5"><b>12.5 </b>US</option>
+                        <option value="13"><b>13 </b>US</option>
+                        <option value="13.5"><b>13.5 </b>US</option>
+                        <option value="14"><b>14 </b>US</option>
+                        <option value="14.5"><b>14.5 </b>US</option>
+                        <option value="15"><b>15 </b>US</option>
+                    </select>
+                </div>
+                <div class="size_block" id="MenSizes" style="display: none;">
+                    <select onchange="setSize(this)" class="custom-select">
+                        <option value="" selected>Select size</option>
+                        <option value="3.5"><b>3.5 </b>US</option>
+                        <option value="4"><b>4 </b>US</option>
+                        <option value="4.5"><b>4.5 </b>US</option>
+                        <option value="5"><b>5 </b>US</option>
+                        <option value="5.5"><b>5.5 </b>US</option>
+                        <option value="6"><b>6 </b>US</option>
+                        <option value="6.5"><b>6.5 </b>US</option>
+                        <option value="7"><b>7 </b>US</option>
+                        <option value="7.5"><b>7.5 </b>US</option>
+                        <option value="8"><b>8 </b>US</option>
+                        <option value="8.5"><b>8.5 </b>US</option>
+                        <option value="9"><b>9 </b>US</option>
+                        <option value="9.5"><b>9.5 </b>US</option>
+                        <option value="10"><b>10 </b>US</option>
+                        <option value="10.5"><b>10.5 </b>US</option>
+                        <option value="11"><b>11 </b>US</option>
+                        <option value="11.5"><b>11.5 </b>US</option>
+                        <option value="12"><b>12 </b>US</option>
+                        <option value="12.5"><b>12.5 </b>US</option>
+                        <option value="13"><b>13 </b>US</option>
+                        <option value="13.5"><b>13.5 </b>US</option>
+                        <option value="14"><b>14 </b>US</option>
+                        <option value="14.5"><b>14.5 </b>US</option>
+                        <option value="15"><b>15 </b>US</option>
+                        <option value="16"><b>16 </b>US</option>
+                        <option value="17"><b>17 </b>US</option>
+                        <option value="18`"><b>18 </b>US</option>
+                    </select>
+                </div>
+            </div>
+            <div class="size_block">
+                <span class="select">Quantity</span>
+                <div class="size_choise size_choise_center">
+                    <input type="number" step="1" min="1" max="27" id="num_count" name="quantity" value="1"
+                           size="1" disabled>
+                    <span class="left_only"><u><span id="left"></span> of <span id="full"></span> left</u></span>
+                </div>
+            </div>
+            <div class="special_offer" id="basic_special_offer">
+                <div class="special_offer_content">
+                    <h4><a href="">Special price</a> and <a href="">bonuses</a> are available for next: <span
+                            class="time_left"> </span></h4>
+                    <button onclick="setContent(1, true)" class="btn btn-lg btn-danger">Quick buy</button>
+                    <p class="bonuses">Bonuses</p>
+                    <div class="special_block">
+                        <div class="bonuses_offer"><span><img src="images/birds.png"></span><span class="bonus_desc"><b
+                                style="color:red;">Free shipping</b></span>
+                        </div>
+                        <div class="bonuses_offer"><span><img src="images/birds.png"></span><span class="bonus_desc"><b
+                                style="color:green;">In stock</b></span>
+                        </div>
+                    </div>
+                    <div class="special_block">
+                        <div class="bonuses_offer"><span><img src="images/birds.png"></span><span class="bonus_desc">2-Day Shipping</span>
+                        </div>
+                        <div class="bonuses_offer"><span><img src="images/birds.png"></span><span class="bonus_desc">Special price today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mar_top15">
+                <span class="select">Colors:</span>
+                <div class="size_choise">
+                    {{#each model.sneakers}}
+                        <div class="color_choise">
+                            <a href="/firm/{{../firm.id}}/model/{{../model.id}}/sneakers/{{this.alias}}">
+                                <div {{#ifCond this.alias '==' ../sneakers.alias}}class="color_choise_active"{{/ifCond}}
+                                     style="background-image: url({{this.photoShotSmall}})"></div>
+                                <a class="color_name"
+                                   href="/firm/{{../firm.id}}/model/{{../model.id}}/sneakers/{{this.alias}}">{{this.name}}</a>
+                            </a>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="about_product flex-container" id="basic_about_product">
+            <div class="all_sneackers flex-container column">
+                <div class="line"></div>
+                <div class="about_block mar_top20">
+                    <div class="about_sneackers flex-container column">
+                        <div class="hand_made"><span><img src="images/original.png"></span><span
+                                class="select paddleft5">Aesthetic Original sneaker</span></div>
+                        <div class="hand_text">
+                            <p><b>Q.</b> Are your shoes authentic?</p>
+                            <p><b>A.</b> All customs are made using 100% authentic shoes, no fakes/variants or b-grades. Due
+                            to the nature of the product, which is specially
+                            hand crafted for each customer, all sales are final.</p>
+                        </div>
+                        <div onclick="showFullText(this)" class="hand_arrow">
+                            <img src="images/arrow_bottom.png">
+                        </div>
+                    </div>
+                    <div class="about_sneackers flex-container column">
+                        <div class="hand_made"><span><img src="images/hand_made.png"></span><span
+                                class="select paddleft10">Hand painted</span></div>
+                        <div class="hand_text">
+                            <p><b>Q.</b> Why to buy hand painted?</p>
+                            <p><b>A.</b> Our shoes help to stand out from the crowd. Keep in mind that they are pieces of
+                            art and should be treated as such. Customs can still scuff just like any normal shoe but
+                            overall are permanent and waterproof as well. </p>
+                        </div>
+                        <div onclick="showFullText(this)" class="hand_arrow">
+                            <img src="images/arrow_bottom.png">
+                        </div>
+                    </div>
+                    <div class="about_sneackers flex-container column">
+                        <div class="hand_made">
+                            <span><img src="images/clean.png"></span><span class="select paddleft10">Hand-made painted</span>
+                        </div>
+                        <div class="hand_text">
+                            <p><b>Q.</b> Are the customs wearable? How do I take care of them?</p>
+                            <p><b>A.</b> All customs are made to be 100% wearable and are sealed with a protective coating
+                            when finished. Customs are waterproof and can be cleaned with soap and water but do not
+                            apply chemicals such as alcohol, etc. to shoes.</p>
+                        </div>
+                        <div onclick="showFullText(this)" class="hand_arrow">
+                            <img src="images/arrow_bottom.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container" id="basic_about">
+        <div class="size_block last_block">
+            <span class="select">Another models:</span>
+            <div class="size_choise">
+                {{#each firms}}
+                    {{#each this.models}}
+                        {{#each this.sneakers}}
+                            <a href="/firm/{{../../this.id}}/model/{{../this.id}}/sneakers/{{this.alias}}">
+                                <div class="color_choise">
+                                    <div style="background-image: url({{this.photoShotSmall}})"></div>
+                                    <a class="color_name"
+                                       href="/firm/{{../../this.id}}/model/{{../this.id}}/sneakers/{{this.alias}}">{{../../this.name}}
+                                        <br> {{../this.name}}</a>
+                                </div>
+                            </a>
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+<form id="sendFormCast" method="POST">
+    <!-- Information page -->
+    <div class="content_page_1" id="information_page" style="display:none;">
+        <div class="path" id="information">
+            <a href="/">Custom sneakers ></a><a href="/firm/{{firm.id}}/model/{{model.id}}/sneakers/{{sneakers.alias}}">&nbsp; {{firm.name}} {{model.name}} {{sneakers.name}}</a><span> > contact information</span>
+        </div>
+        <div class="product_item" id="product_item">
+            <div class="product_foto">
+                <div class="product_image"><img id="contact-image" src=""></div>
+            </div>
+            <div class="product_order flex-container column">
+                <div class="flex-container">
+                    <div class="product_name">
+                        <h4>(1) {{firm.name}} {{model.name}} <br>{{sneakers.name}}</h4>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <span>Size: <b class="current_size"></b></span>
+                    </div>
+                </div>
+                <div class="line line1"></div>
+                <div class="flex-container column mar_top15">
+                    <div class="flex-container">
+                        <div class="product_name">
+                            <span class="subtotal">Subtotal</span>
+                        </div>
+                        <div class="product_cost1">
+                            <span><sup>$</sup>{{sneakers.price}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container mar_top15">
+                    <div class="product_name">
+                        <span class="subtotal">2-Day Shipping</span>
+                    </div>
+                    <div class="product_cost1">
+                        <span>Free</span>
+                    </div>
+                </div>
+                <div class="line line1 mar_top15"></div>
+                <div class="flex-container mar_top15">
+                    <div class="product_name">
+                        <span class="subtotal1">Total</span>
+                    </div>
+                    <div class="product_cost2">
+                        <span><sup>$</sup>{{sneakers.price}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="changed changed_diff" id="information_form">
+            <div class="order_head">1. Contact information</div>
+            <div class="order">
+                <div class="form-group">
+                    <input type="email" class="single_input form-control form-control2" name="email" id="mail1"
+                           placeholder="Email"
+                           required maxlength="50" autocomplete="on">
+                </div>
+                <span class="address">Shipping address</span>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input" name="buyer_first_name" id="firstname1"
+                           placeholder="First name" minlength="4" maxlength="20" autocomplete="on">
+                </div>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input" name="buyer_last_name" id="lastname1"
+                           placeholder="Last name" minlength="4" maxlength="20" autocomplete="on">
+                </div>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input" name="shipping_address" id="address1"
+                           placeholder="Address"
+                           autocomplete="on">
+                </div>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input" name="shipping_city" id="city1"
+                           placeholder="City"
+                           autocomplete="on">
+                </div>
+                <div class="form-group mar_top15">
+                    <select class="form-control single_input" name="shipping_state" id="state1">
+                        <option value="AL">Alabama(AL)</option>
+                        <option value="AK">Alaska(AK)</option>
+                        <option value="AZ">Arizona(AZ)</option>
+                        <option value="AR">Arkansas(AR)</option>
+                        <option value="CA">California(CA)</option>
+                        <option value="CO">Colorado(CO)</option>
+                        <option value="CT">Connecticut(CT)</option>
+                        <option value="DE">Delaware(DE)</option>
+                        <option value="FL">Florida(FL)</option>
+                        <option value="GA">Georgia(GA)</option>
+                        <option value="HI">Hawaii(HI)</option>
+                        <option value="ID">Idaho(ID)</option>
+                        <option value="IL">Illinois(IL)</option>
+                        <option value="IN">Indiana(IN)</option>
+                        <option value="IA">Iowa(IA)</option>
+                        <option value="KS">Kansas(KS)</option>
+                        <option value="KY">Kentucky(KY)</option>
+                        <option value="LA">Louisiana(LA)</option>
+                        <option value="ME">Maine(ME)</option>
+                        <option value="MD">Maryland(MD)</option>
+                        <option value="MA">Massachussets(MA)</option>
+                        <option value="MI">Michigan(MI)</option>
+                        <option value="MN">Minnesota(MN)</option>
+                        <option value="MO">Missouri(MO)</option>
+                        <option value="MT">Montana(MT)</option>
+                        <option value="NE">Nebraska(NE)</option>
+                        <option value="NV">Nevada(NV)</option>
+                        <option value="NH">New Hampshire(NH)</option>
+                        <option value="NJ">New Jersey(NJ)</option>
+                        <option value="NM">New Mexico(NM)</option>
+                        <option value="NY">New York(NY)</option>
+                        <option value="NC">North Carolina(NC)</option>
+                        <option value="ND">North Dakota(ND)</option>
+                        <option value="OH">Ohio(OH)</option>
+                        <option value="OK">Oklahoma(OK)</option>
+                        <option value="OR">Oregon(OR)</option>
+                        <option value="PA">Pennsylvania(PA)</option>
+                        <option value="RI">Rhode Island(RI)</option>
+                        <option value="SC">South Carolina(SC)</option>
+                        <option value="SD">South Dakota(SD)</option>
+                        <option value="TN">Tennessee(TN)</option>
+                        <option value="TX">Texas(TX)</option>
+                        <option value="UT">Utah(UT)</option>
+                        <option value="VT">Vermont(VT)</option>
+                        <option value="VA">Virginia(VA)</option>
+                        <option value="WA">Washington(WA)</option>
+                        <option value="WV">West Virginia(WV)</option>
+                        <option value="WI">Wisconsin(WI)</option>
+                        <option value="WY">Wyoming(WY)</option>
+                    </select>
+                </div>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input" name="shipping_zipcode" id="zipcode1"
+                           placeholder="ZIP Code" minlength="4" maxlength="20" autocomplete="on">
+                </div>
+                <div class="form-group mar_top15">
+                    <input type="text" class="form-control single_input mar_right5" name="shipping_country"
+                           id="country1"
+                           placeholder="Country" minlength="4" maxlength="20" value="United States" disabled>
+                </div>
+                <button onclick="setContent(2, true)" class="btn btn-danger buy_btn nomargin">Continue to payment
+                    method
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+    <!--  -->
+    <!-- Payment page -->
+    <div class="content_page_1" id="payment_page" style="display:none;">
+        <div class="path" id="payment">
+            <a href="/">Custom sneakers ></a><a href="/firm/{{firm.id}}/model/{{model.id}}/sneakers/{{sneakers.alias}}">&nbsp; {{firm.name}} {{model.name}} {{sneakers.name}}</a><span> > contact information > payment method</span>
+        </div>
+        <div class="product_item" id="product_item">
+            <div class="product_foto">
+                <div class="product_image"><img id="payment-image" src=""></div>
+            </div>
+            <div class="product_order flex-container column">
+                <div class="flex-container">
+                    <div class="product_name">
+                        <h4>(1) {{firm.name}} {{model.name}} <br>{{sneakers.name}}</h4>
+                    </div>
+                    <div class="product_cost">
+                        <span><sup>$</sup>{{sneakers.price}}</span>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <span>Size: <b class="current_size"></b></span>
+                    </div>
+                </div>
+                <div class="line line1 mar_top60"></div>
+                <div class="flex-container column mar_top15">
+                    <div class="flex-container">
+                        <div class="product_name">
+                            <span class="subtotal">Subtotal</span>
+                        </div>
+                        <div class="product_cost1">
+                            <span><sup>$</sup>{{sneakers.price}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container mar_top15">
+                    <div class="product_name">
+                        <span class="subtotal">2-Day Shipping</span>
+                    </div>
+                    <div class="product_cost1">
+                        <span>Free</span>
+                    </div>
+                </div>
+                <div class="line line1 mar_top15"></div>
+                <div class="flex-container mar_top15">
+                    <div class="product_name">
+                        <span class="subtotal1">Total</span>
+                    </div>
+                    <div class="product_cost2">
+                        <span><sup>$</sup>{{sneakers.price}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="changed changed_diff" id="payment_form">
+            <div class="order">
+                <div class="order_head">2. Payment information</div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input onchange="selectPayWay(1)" class="form-check-input check_in" type="radio" name="card"
+                                   id="card" value="option1" checked>
+                            <label class="form-check-label picture picture_active" for="card"><img
+                                    src="images/cards.png"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input onchange="selectPayWay(2)" class="form-check-input check_in" type="radio"
+                                   name="card"
+                                   id="paypal"
+                                   value="option2">
+                            <label class="form-check-label picture" for="paypal"><img src="images/paypal.png"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inline">
+                    <span class="address">Shipping address</span>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input onchange="selectAddress(1)" class="form-check-input check_in1" type="radio"
+                                   name="shipping_address"
+                                   id="shipping_address" value="option1" checked>
+                            <label class="form-check-label picture1" for="shipping_address">Same as shipping
+                                address</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline">
+                            <input onchange="selectAddress(2)" class="form-check-input check_in1" type="radio"
+                                   name="shipping_address"
+                                   id="different_address" value="option2">
+                            <label class="form-check-label picture1" for="different_address">Use a different billing
+                                address</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="shippingAddress" style="display:none;">
+                    <div class="form-group">
+                        <input type="text" class="form-control single_input mar_right5" name="buyer_first_name"
+                               id="firstname2"
+                               placeholder="First name" minlength="4" maxlength="20" autocomplete="on">
+                    </div>
+                    <div class="form-group mar_top15">
+                        <input type="text" class="form-control single_input" name="buyer_last_name" id="lastname2"
+                               placeholder="Last name" minlength="4" maxlength="20" autocomplete="on">
+                    </div>
+                    <div class="form-group mar_top15">
+                        <input type="text" class="form-control single_input" name="shipping_address" id="address2"
+                               placeholder="Address" autocomplete="on">
+                    </div>
+                    <div class="form-group mar_top15">
+                        <input type="text" class="form-control single_input" name="shipping_city" id="city2"
+                               placeholder="City"
+                               autocomplete="on">
+                    </div>
+                    <div class="form-group mar_top15">
+                        <select class="form-control single_input" name="shipping_state" id="state2">
+                            <option value="AL">Alabama(AL)</option>
+                            <option value="AK">Alaska(AK)</option>
+                            <option value="AZ">Arizona(AZ)</option>
+                            <option value="AR">Arkansas(AR)</option>
+                            <option value="CA">California(CA)</option>
+                            <option value="CO">Colorado(CO)</option>
+                            <option value="CT">Connecticut(CT)</option>
+                            <option value="DE">Delaware(DE)</option>
+                            <option value="FL">Florida(FL)</option>
+                            <option value="GA">Georgia(GA)</option>
+                            <option value="HI">Hawaii(HI)</option>
+                            <option value="ID">Idaho(ID)</option>
+                            <option value="IL">Illinois(IL)</option>
+                            <option value="IN">Indiana(IN)</option>
+                            <option value="IA">Iowa(IA)</option>
+                            <option value="KS">Kansas(KS)</option>
+                            <option value="KY">Kentucky(KY)</option>
+                            <option value="LA">Louisiana(LA)</option>
+                            <option value="ME">Maine(ME)</option>
+                            <option value="MD">Maryland(MD)</option>
+                            <option value="MA">Massachussets(MA)</option>
+                            <option value="MI">Michigan(MI)</option>
+                            <option value="MN">Minnesota(MN)</option>
+                            <option value="MO">Missouri(MO)</option>
+                            <option value="MT">Montana(MT)</option>
+                            <option value="NE">Nebraska(NE)</option>
+                            <option value="NV">Nevada(NV)</option>
+                            <option value="NH">New Hampshire(NH)</option>
+                            <option value="NJ">New Jersey(NJ)</option>
+                            <option value="NM">New Mexico(NM)</option>
+                            <option value="NY">New York(NY)</option>
+                            <option value="NC">North Carolina(NC)</option>
+                            <option value="ND">North Dakota(ND)</option>
+                            <option value="OH">Ohio(OH)</option>
+                            <option value="OK">Oklahoma(OK)</option>
+                            <option value="OR">Oregon(OR)</option>
+                            <option value="PA">Pennsylvania(PA)</option>
+                            <option value="RI">Rhode Island(RI)</option>
+                            <option value="SC">South Carolina(SC)</option>
+                            <option value="SD">South Dakota(SD)</option>
+                            <option value="TN">Tennessee(TN)</option>
+                            <option value="TX">Texas(TX)</option>
+                            <option value="UT">Utah(UT)</option>
+                            <option value="VT">Vermont(VT)</option>
+                            <option value="VA">Virginia(VA)</option>
+                            <option value="WA">Washington(WA)</option>
+                            <option value="WV">West Virginia(WV)</option>
+                            <option value="WI">Wisconsin(WI)</option>
+                            <option value="WY">Wyoming(WY)</option>
+                        </select>
+                    </div>
+                    <div class="form-group mar_top15">
+                        <input type="text" class="form-control single_input" name="shipping_zipcode" id="zipcode2"
+                               placeholder="ZIP Code" minlength="4" maxlength="20" autocomplete="on">
+                    </div>
+                    <div class="form-group mar_top15">
+                        <input type="text" class="form-control single_input mar_right5" name="shipping_country"
+                               id="country2"
+                               placeholder="Country" minlength="4" maxlength="20" value="United States" disabled>
+                    </div>
+                </div>
+                <button id="completeBut" onclick="setContent(3, true)" class="btn btn-danger buy_btn nomargin">Complete order</button>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</form>
+
+<script src="/js/scripts/product.js"></script>
+
+<script>
+    var photos = {{{sneakers.photosJSON}}};
+
+    function preloadImages(el) {
+        for(var i=0; i<photos.length; i++){
+            var images = new Image();
+            images.src = photos[i];
+        }
+    }
+
+    function setImage(el) {
+        let src = $(el).attr('src');
+        $(".product img").attr("src", src);
+
+        var index = parseInt($(el).attr('data-index'));
+        src = photos[index];
+        $(".product img").attr("src", src);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        $("#main_image").attr("src", '{{sneakers.photoShot}}');
+        $("#contact-image").attr("src", '{{sneakers.photoShot}}');
+        $("#payment-image").attr("src", '{{sneakers.photoShot}}');
+
+        $(".carousel-cell:first-child").attr("src", '{{sneakers.photoShot}}');
+
+        //preloadImages();
+    });
+
+    window.onload = function() {
+        sneakerId = $("#sneakerId").text();
+        setStartValues();
+        if ($('.main-carousel').length) {
+            $('.main-carousel').flickity({
+                cellAlign: 'left',
+                contain: true,
+                prevNextButtons: false,
+                on: {
+                    ready: function() {
+                        $(".carousel-cell img").each(function(index){
+                            $(this).attr("src", photos[index]);
+                            $(this).attr("style", "");
+                        });
+                    }
+                }
+            });
+        }
+    };
+
+</script>

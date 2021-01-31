@@ -1,0 +1,45 @@
+{{> header}}
+
+<div class="flex-container content-block">
+
+    {{#if firms}}
+        <table>
+            <tr>
+                <th></th>
+                <th class="description">ALIAS</th>
+                <th class="description">NAME</th>
+                <th class="description">PRIORITY</th>
+                <th></th>
+            </tr>
+            <tr class="block-link"></tr>
+
+            {{#each firms}}
+                <tr onClick="window.location.href='{{../routePath}}/{{id}}';" class="compaings-content trlink">
+                    <td class="compa">
+
+                        {{#if photo}}
+                            <img src="{{photo}}">
+                        {{else}}
+                            <img src="images/image.png">
+                        {{/if}}
+
+                    </td>
+                    <td>{{alias}}</td>
+                    <td>{{name}}</td>
+                    <td>{{priority}}</td>
+                    <td>
+                        {{#if ../baseUser.permissionsObject.read}}
+                            <a href="{{../routePath}}/edit/{{id}}" onclick="event.stopPropagation()" class="redcrossx-div"><img
+                                    src="images/points.png"></a>
+                            <a onclick="showModal('Confirm deleting firm: <b>{{alias}}</b>', '{{../routePath}}/delete/{{id}}'); event.stopPropagation()"
+                               class="redcrossx-div"><img src="images/crossx.png"></a>
+                        {{/if}}
+                    </td>
+                </tr>
+                <tr class="block-link2"></tr>
+            {{/each}}
+
+        </table>
+    {{/if}}
+
+</div>

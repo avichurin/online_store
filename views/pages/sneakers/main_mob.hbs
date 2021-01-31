@@ -1,0 +1,182 @@
+{{> sneakers_header_mob }}
+<div class=" flex-container column">
+    <div id="content_one">
+        <div class="page_one_bg flex-container">
+            <div class="sneakers animated zoomInLeft"></div>
+            <div class="titles">
+                <div class="page_one_title">Stand out from the crowd.</div>
+                <div class="title_name">Buy custom branded sneakers from professional artists</div>
+            </div>
+        </div>
+        <div id="choose"></div>
+        <div class="description">
+            <h3>Authentic sneakers. Hand painted. Unique.</h3>
+        </div>
+        <div class="choise">
+            <h5>Choose your sneaker</h5>
+        </div>
+        <div class="flex-container">
+            <div class="brands flex-container">
+                <div class="brand_item brand_item_active" onclick="selectFirm(this, 'nike', true)">
+                    <img class="brand_nike" src="images/brand_nike_active.png">
+                </div>
+                <div class="brand_item" onclick="selectFirm(this, 'adidas', true)">
+                    <img class="brand_adidas" src="images/brand_adidas.png">
+                </div>
+                <div class="brand_item" onclick="selectFirm(this, 'jordan', true)">
+                    <img class="brand_jordan" src="images/brand_jordan.png">
+                </div>
+                <div class="brand_item" onclick="selectFirm(this, 'vans', true)">
+                    <img class="brand_vans" src="images/brand_vans.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content_page">
+        <div id="content_two">
+            {{#each firms}}
+                <div id="firm_{{@index}}" class="works_block"
+                     {{#ifCond @index '!=' 0}}style="display: none;"{{/ifCond}}>
+                    {{#each this.models}}
+                        {{#each this.sneakers}}
+                            <div class="works_part">
+                                <a href="/firm/{{../../this.id}}/model/{{../this.id}}/sneakers/{{this.alias}}">
+                                    <div class="works_card">
+                                        <div class="works_img">
+                                            <div class="works_img_in"
+                                                 style="background-image: url({{this.photoShotSmall}});"></div>
+                                        </div>
+                                        <div class="works_text">
+                                            <h4 class="works_name">{{../this.name}}</h4>
+                                            <p class="works_desc">{{this.name}}</p>
+                                            <p class="works_line">${{this.price}}</p>
+                                            <a href="/firm/{{../../this.id}}/model/{{../this.id}}/sneakers/{{this.alias}}"
+                                               class="btn btn-lg works_but btn-danger">Read more</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {{/each}}
+                    {{/each}}
+                    <div class="works_more"><a href="/firm/{{this.id}}">More {{this.alias}} sneakers</a></div>
+                </div>
+            {{/each}}
+
+        </div>
+        <div id="ourwork"></div>
+        <div class="description description_2">
+            <h3>Our masters have big experience of shoes customization</h3>
+        </div>
+        <div class="choise">
+            <h5>Enjoy the working process</h5>
+        </div>
+        <div id="content_three">
+            <div class="works_master">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DY46Xx_r6nI?start=250"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <div id="content_four" class="flex-container column">
+                <h1 class="page_four_title">Special offer -10% for all sneakers</h1>
+                <div class="four_p_line">
+                    <div class="big_line"></div>
+                </div>
+                <div class="four_p_text">
+                    Sneakers Customs offers 10% off your next purchase when you join our Big Rewards customer loyalty program. Customers can redeem the reward online or in-store.
+                </div>
+                <button type="button" class="four_button btn">Get discount</button>
+            </div>
+        </div>
+
+
+        <div id="content_five">
+            <div class="line_1">
+                <div class="title_line_1">
+                    <h3 class="page_five_title">3 Reasons why custom sneakers are better than ordinary</h3>
+                </div>
+                <div class="example_1">
+                    <div class="example_1_img"><img src="images/example_1.jpg"></div>
+                    <div class="spans">
+                        <span><strong>01</strong> Unique design</span>
+                        <span><strong>02</strong> Handmade</span>
+                        <span><strong>03</strong> Limited</span>
+                    </div>
+                    <div class="example_1_text"><p>Each week, dozens of sneakers hit the market to satisfy a dizzying
+                        range of consumers with innumerable tastes. We try to keep you up-to-date on all those releases,
+                        but sometimes it's easy to get lost in the noise. Plus, some of the best sneakers we see don't
+                        even reach the masses because they're just sampled ideas or are made in a very small run. Here's
+                        a look at what this year has given us already, plus a few things that you can expect (and pray
+                        for).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line_2">
+                <div class="line_2_block">
+                    <div class="line_2_img"><img src="images/example_3.jpg"></div>
+                </div>
+                <div class="title_line_2">
+                    <h3 class="page_five_title title_2">What our clients say about us</h3>
+                    <div class="spans_about_img">
+                        <img src="images/customer_1.png">
+                        <img src="images/customer_2.png">
+                        <img src="images/customer_3.png">
+                        <img src="images/customer_4.png">
+                        <img src="images/customer_5.png">
+                    </div>
+                    <h4 class="page_five_title title_2">Adam Thomas Mras</h4>
+                    <div class="quote">
+                        <span class="quotes_up mar_right10"><img src="images/quotes_up.png"></span><h5
+                            class="mar_right10">So good, I don't believe</h5><span class="quotes_down"><img
+                            src="images/quotes_down.png"></span>
+                    </div>
+                    <p>Great fit. I bought these for my son and ordered them just a bit large as he has been going
+                        through a growth spurt. He says they fit great! He wears them to school all day on gym days and
+                        plays basketball in them. He loves them and this is his second pair. I have no doubt I will be
+                        ordering many, many more.</p>
+                </div>
+            </div>
+        </div>
+        <div id="content_six">
+            <div class="email_block">
+                <h3 class="paddtop100 up_title">Be in touch with us, you will always know
+                    the first about discounts and interesting offers</h3>
+            </div>
+            <div class="e_mail">
+                <div class="e_mail_submit">
+                    <form action="" method="post">
+
+                        <input class="email" type="email" placeholder="Your email" name="email">
+                        <button class="submit_1" type="submit"><img src="images/email.png" alt="submit"/></button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="contacts">
+            <div class="logo_footer">
+                <a href="/">
+                    <div class="logo_down"></div>
+                </a>
+                <div class="down_text">Over the last couple years, the brand has attracted clientele both domestic
+                    and abroad as well as some well known personalities in different fields of entertainment. Our
+                    mission is to continue to build the brand as well as inspire future generations of artists to
+                    come.
+                </div>
+            </div>
+            <div class="contacts_footer">
+                <h5 class="contacts_name">Contacts</h5>
+                <div class="mailto1"><a href="#">info@sneakers-customs.com</a></div>
+            </div>
+            <div class="socials_footer">
+                <h5 class="contacts_name">Socials</h5>
+                <div class="mailto1"><a href="https://www.instagram.com/sneakers_customs/"><span
+                        class="social_icon_inst"><img src="images/social_icon_inst.png"></span>sneakers_customs</a>
+                </div>
+            </div>
+        </div>
+        <div class="company_name">Sneakers Customs (c) 2016-2018</div>
+    </div>
+</div>
+
+<script src="/js/scripts/main.js"></script>

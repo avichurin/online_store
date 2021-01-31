@@ -1,0 +1,2563 @@
+::-webkit-input-placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* webkit */
+::-moz-placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* IE */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+select {
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 5px;
+    color: #1C82F7;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, regular;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input, textarea, select {
+    outline: none;
+}
+
+input:active, select:active {
+    outline: none;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100px;
+    background: #fff;
+    box-shadow: 1px 6px 26px rgba(0, 0, 0, 0.1);
+}
+
+#content_page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content_page_1 {
+    width: 64.5%;
+    margin: 0 auto;
+}
+
+.header_content {
+    width: 64.5%;
+    margin: 0 auto;
+
+}
+
+.header_content_1 {
+    width: 64.5%;
+    margin: 0 auto;
+
+}
+
+.header_content_1 {
+    width: 64.5%;
+    margin: 0 auto;
+
+}
+
+.company_name {
+    width: 60%;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, regular;
+    color: #B2B2B2;
+    letter-spacing: 1px;
+    margin: 0 auto 10px auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.right-side-header {
+    float: right;
+    padding-top: 40px;
+}
+
+.right-side-header_1 {
+    float: right;
+    padding-top: 40px;
+}
+
+.right-side-header div {
+    margin-right: 15px;
+}
+
+.right-side-header_1 div {
+    margin-right: 15px;
+}
+
+.left-side-header {
+    float: left;
+    width: 30%;
+}
+
+.last_block {
+    margin-left: 20px !important;
+    padding-bottom: 20px;
+}
+
+.changed_clear {
+    width: 55%
+}
+
+.all_sneackers, .last_block {
+    width: 100%
+}
+
+.header-menu {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: 'Karla', sans-serif, regular;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 10px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 200px;
+    background-size: contain;
+}
+
+.page_one_bg {
+    background-image: url(../images/bg_top.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+
+}
+
+.page_one_title {
+    color: #fff;
+    font-size: 62px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Avalon Bold', sans-serif, bold;
+    padding-top: 115px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.page_four_title {
+    color: #292A31;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Myriad Pro', sans-serif, regular;
+    padding: 60px 0 0 50px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.big_line {
+    width: 163px;
+    height: 6px;
+    background: #292A31;
+    margin: 10px 0 0 0px;
+    display: inline-block;
+}
+
+.four_p_text p {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #292A31;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2;
+    padding: 20px 20px 0 0px;
+    text-overflow: ellipsis;
+}
+
+.four_p_text {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+
+}
+
+.four_p_clear {
+    width: 28%;
+    display: inline-block;
+    float: left;
+    height: 100%
+}
+
+.four_clear {
+    width: 28%;
+    display: inline-block;
+    height: 100%
+}
+
+.four_p {
+    overflow: hidden;
+}
+
+.four_button {
+    width: 30%;
+}
+
+.four_button button {
+    border: 2px solid red;
+    background: transparent;
+    color: red;
+    float: right;
+    margin: 13% 10% 0 0;
+    width: 190px;
+    height: 51px;
+    font-size: 18px;
+    font-family: 'Myriad Pro', sans-serif, regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.title_name {
+    color: #fff;
+    font-size: 36px;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Avalon Bold', sans-serif, bold;
+    padding-left: 118px;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.title_line_1 {
+    width: 43%;
+}
+
+.title_line_1 h3 {
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 160px 0 0 0;
+}
+
+.example_1 {
+    width: 58%;
+    margin-right: 70px;
+}
+
+.example_1_img img {
+    width: 100%;
+}
+
+.example_1 p, .title_line_2 p {
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #6B6B6B;
+    letter-spacing: 1px;
+    padding: 15px 0 0 0;
+}
+
+.title_line_2 p {
+    padding: 12px 0 0 40px;
+}
+
+.example_1 span {
+    font-size: 1.8vh;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #6B6B6B;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 61%;
+    padding-right: 7vh;
+}
+
+.spans {
+    margin-top: 2vh;
+}
+
+.example_1 strong {
+    color: #000;
+}
+
+.example_2_img {
+    margin-top: 50px;
+}
+
+.line_1 {
+    margin-right: -28%;
+}
+
+.example_2_content img {
+    width: 100%;
+    height: 100%;
+}
+
+.line_2 {
+    margin-top: 100px;
+}
+
+.line_2_block {
+    display: inline-block;
+}
+
+.line_2_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.line_2_img {
+    float: right;
+    height: 330px;
+    width: 490px;
+}
+
+.title_line_2 {
+    width: 61%;
+}
+
+.title_line_2 h3 {
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0 20px 0 40px;
+    margin: 0;
+}
+
+#content_six h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.email_block {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.title_line_2 h4 {
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0 0 0 40px;
+    margin-top: 30px;
+}
+
+.about_img {
+    padding: 0 0 0 15px;
+}
+
+.about_img img {
+    height: 100%;
+    width: 6%;
+}
+
+.spans_about_img {
+    margin-top: 40px;
+}
+
+.about_product {
+    margin-top: 10px;
+    margin-left: 36%;
+    padding-bottom: 20px;
+    white-space: normal;
+}
+
+.quotes_down {
+    display: inline-block;
+}
+
+.quotes_up {
+    float: left;
+    display: inline-block;
+}
+
+.quote {
+    margin-left: 28%;
+    text-align: left;
+}
+
+.quote h5 {
+    display: inline-block;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.sneakers {
+    width: 30%;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    background-image: url(../images/red_sneaker.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5%;
+    left: 14%;
+    height: 131%;
+    z-index: 1;
+    background-size: 99.5%;
+
+}
+
+.circle {
+    width: 17px;
+    height: 17px;
+    padding-left: 250px;
+    display: inline-block;
+}
+
+.propose_text {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Avalon Bold', sans-serif, bold;
+    padding-left: 30px;
+    margin: 0;
+}
+
+#content_two {
+    width: 60%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#content_three {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content_four {
+    height: 400px;
+    width: 150%;
+    box-shadow: 1px 6px 26px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-left: -50%;
+}
+
+#content_five {
+    width: 60%;
+    margin: 100px auto 0 auto;
+}
+
+#content_six {
+    background: #EFEFEF;
+    margin-top: 100px;
+    height: 450px;
+}
+
+.works_master {
+    margin: 50px auto;
+    height: 700px;
+}
+
+.description {
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+#choose, #ourwork{
+    height: 100px;
+}
+
+@font-face {
+    font-family: 'Avalon Bold';
+    src: url('../fonts/Avalon Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro/MyriadPro-Bold.otf');
+url('../fonts/MyriadPro/MyriadPro-Bold.otf') format('otf'),
+url('../fonts/MyriadPro/MyriadPro-Regular.otf') format('otf'),
+url('../fonts/MyriadPro/MyriadPro-Semibold.otf') format('otf');
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+.description h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Karla', sans-serif, bold;
+    letter-spacing: 1px;
+}
+
+.choise {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.choise h5 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, regular;
+    color: #292A31;
+    letter-spacing: 1px;
+}
+
+.brands {
+    margin: 50px auto 0 auto;
+    width: 64.5%;
+    justify-content: center;
+}
+
+.brand_item {
+    width: 140px;
+    height: 70px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px #c5ccdb;
+    margin-right: 20px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand_item:last-child{
+    margin-right: 0;
+}
+
+.brand_item_active{
+    background-color: #ff3333;
+}
+
+.brand_adidas{
+    width: 48px;
+}
+
+.brand_nike{
+    width: 67px;
+}
+
+.brand_jordan{
+    width: 51px;
+}
+
+.brand_vans{
+    width: 85px;
+}
+
+.works_block{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.works_part {
+    margin: 0 15px;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 22.2%;
+    cursor: pointer;
+}
+
+.works_part:hover {
+    box-shadow: 0 11px 26px rgba(0, 0, 0, 0.2);
+}
+
+.works_card {
+    height: 100%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.works_img{
+    width: 100%;
+}
+
+.works_img_in {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.works_text {
+    background: #fff;
+    text-align: center;
+    margin-top: auto;
+}
+
+.works_text a {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, bold;
+    font-weight: 500;
+    display: block;
+    background: #FF3333;
+    max-width: 144px;
+    margin: 0 auto 20px auto;
+}
+
+.works_line {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, bold;
+    font-weight: 700;
+}
+
+.works_name {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, regular;
+    font-weight: 600;
+    white-space: normal;
+}
+
+.works_desc {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Karla', sans-serif, regular;
+    font-weight: 600;
+}
+
+.e_mail_submit {
+    text-align: center;
+}
+
+.email {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 40px;
+    font-family: 'Karla', sans-serif, regular;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    width: 485px;
+    height: 67px;
+    box-shadow: 0px 9px 43px rgba(0, 0, 0, 0.2);
+}
+
+.submit_1 {
+    border: none;
+    background: transparent;
+    margin-left: -60px;
+}
+
+.down_text {
+    font-size: 14px;
+    margin-top: 40px;
+    font-family: 'Karla', sans-serif, regular;
+    font-weight: 600;
+    width: 60%;
+}
+
+.contacts_name {
+    font-size: 18px;
+    padding-top: 150px;
+    font-family: 'Karla', sans-serif, bold;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.mailto1 {
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.mailto2 {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.contacts_footer, .socials_footer {
+    padding: 20px;
+}
+
+.mailto1 a, .mailto2 a {
+    font-size: 14px;
+    padding-top: 150px;
+    font-family: 'Karla', sans-serif, bold;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.social_icon_inst, .social_icon_fb {
+    margin-right: 10px;
+}
+
+.logo_footer {
+    width: 55%;
+}
+
+.logo_down {
+    margin-top: 100px;
+    margin-left: 0;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 200px;
+    background-size: contain;
+}
+
+.logo_footer_part {
+    width: 99%;
+    display: inline-block;
+}
+
+.footer {
+    width: 60%;
+    margin: 0 auto 20px auto;
+}
+
+.paddtop5 {
+    padding-top: 5px;
+}
+
+.paddtop10 {
+    padding-top: 10px;
+}
+
+.paddtop20 {
+    padding-top: 20px;
+}
+
+.paddtop100 {
+    padding-top: 100px;
+}
+
+.paddleft5 {
+    padding-left: 5px;
+}
+
+.paddleft10 {
+    padding-left: 10px;
+}
+
+.paddleft50 {
+    padding-left: 50px;
+}
+
+.paddbott10 {
+    padding-bottom: 10px;
+}
+
+.mar_left20 {
+    margin-left: 20px;
+}
+
+.mar_right10 {
+    margin-right: 10px;
+}
+
+.mar_right5 {
+    margin-right: 5px;
+}
+
+.mar_top20 {
+    margin-top: 20px;
+}
+
+.mar_top15 {
+    margin-top: 15px;
+}
+
+.mar_top60 {
+    margin-top: 60px;
+}
+
+.mar_top15 {
+    margin-top: 15px;
+}
+
+.mar_bot10 {
+    margin-bottom: 10px;
+}
+
+.mar_bot20 {
+    margin-bottom: 20px;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.titles {
+    width: 70%;
+    display: inline-block;
+}
+
+.basket {
+    margin-top: -5px;
+    padding: 0 5px;
+}
+
+.red_circle {
+    border: 1px solid red;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin-top: 5px;
+}
+
+.path {
+    margin-top: 100px;
+}
+
+.path span {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, regular;
+    color: #B2B2B2;
+    letter-spacing: 1px;
+}
+
+.path a {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, regular;
+    color: #B2B2B2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.old_prise {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #B2B2B2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.new_prise {
+    font-size: 30px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #FF3333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.path a:active {
+    font-weight: 700;
+}
+
+.product_container {
+    white-space: nowrap;
+}
+
+.changed {
+    width: 36%;
+    float: left;
+    position: relative;
+}
+
+.product_choise_zoom{
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.product_choise {
+    width: 40%;
+    display: inline-block;
+}
+
+.product_choise div {
+    white-space: normal;
+}
+
+.product_choise h1 {
+    font-size: 36px;
+    /*  font-family: 'Karla', sans-serif, bold; */
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+.discount a {
+    font-size: 12px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #FF3333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.left_only {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #FF3333;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.propose_desc {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, regular;
+    color: #000;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+.propose_desc p {
+    padding-right: 30px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product {
+    margin-bottom: 10px;
+    padding-right:10px;
+}
+
+.product_zoom_block {
+    width: 100% !important;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_zoom_image {
+    width: auto !important;
+    height: 60% !important;
+}
+
+.tumbs {
+    padding-right:10px;
+    white-space: normal;
+}
+
+.btn:active, .btn:focus {
+    background: #1C82F7;
+    border-color: #1C82F7;
+}
+
+.size_block {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#allSizes{
+    display: inline-block;
+}
+
+#menSizes{
+    display: inline-block;
+}
+
+.size_choise {
+    margin-top: 5px;
+}
+
+.select {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.special_offer {
+    white-space: normal;
+    float: right;
+    width: 23%;
+}
+
+.special_offer_content {
+    width: 240px;
+    background: #F5F5F5;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.special_offer_content h4 {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.special_offer_content button {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 5px auto 0 auto;
+    display: block;
+    background: #FF3333;
+    width: 180px;
+    height: 50px;
+}
+
+.buy_btn {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #fff;
+    display: block;
+    background: #FF3333;
+    height: 50px;
+    margin: 20px 0 30px 0;
+}
+
+.time_left {
+    font-size: 24px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.special_offer_content h4 a {
+    color: #1C82F7;
+    text-decoration: underline;
+}
+
+.more {
+    color: #1C82F7 !important;
+    text-decoration: underline !important;
+}
+
+.method {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Karla', sans-serif, bold;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+}
+
+.menu_plus {
+    display: inline-block;
+}
+
+.order {
+
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.single_input {
+    width: 265px !important;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Karla', sans-serif, bold;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 0 5% !important;
+}
+
+.double_input {
+    width: 130px !important;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Karla', sans-serif, bold;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 0 5% !important;
+    vertical-align: bottom !important;
+}
+
+.address {
+    display: block;
+    margin: 20px 0 10px 10px;
+}
+
+.size_choise input {
+    width: 55px;
+    height: 37px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #C5CCDB;
+}
+
+.bonuses {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #B2B2B2;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.bonuses_offer {
+    margin-bottom: 5px;
+
+}
+
+.bonus_desc {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    margin-left: 10px;
+}
+
+.line {
+    background: #C5CCDB;
+    height: 1px;
+}
+
+.all_sneackers {
+    margin-left: 1%;
+    font-size: 0;
+}
+
+.about_sneackers p {
+    font-size: 14px;
+    font-family: 'Karla', sans-serif, bold;
+
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.about_sneackers {
+    width: 40%;
+    margin-right: 10%;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.nochange {
+    flex-shrink: 0;
+}
+
+.product_image {
+    height: 100px;
+    width: 100px;
+}
+
+.product_image img {
+    width: 100%;
+}
+
+.product_item {
+    margin-left: 2.8%;
+}
+
+.product_order {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.product_name {
+    width: 100%;
+}
+
+.product_cost {
+    padding-top: 20px;
+}
+
+.product_cost span, .product_cost1 span {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+}
+
+.product_cost2 span {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+}
+
+.product_cost1 {
+    padding-top: 0px;
+}
+
+.line1 {
+    width: 100%;
+}
+
+.product_name h4 {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+}
+
+.subtotal {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+}
+
+.subtotal1 {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+}
+
+.color_choise button {
+    display: block;
+    color: #338DF8;
+    text-decoration: underline;
+
+    margin: 5px 5px 0 0;
+}
+
+.color_choise div {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.color_choise {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.color_choise:hover div, .color_choise_active {
+    box-shadow: 0 0 0 4px #2e8cf8;
+}
+
+.color_name{
+    max-width: 70px;
+    display: block;
+}
+
+.tumbs_pic {
+    height: 50px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.tumbs_pic img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.picture img {
+    border: 1px solid #C5CCDB;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.picture {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.picture_active{
+    box-shadow: 0 0 0 3px #ff3333;
+    border-radius: 14px;
+}
+
+.picture1 {
+    padding: 20px 14px 15px 5px;
+    font-size: 14px;
+    font-weight: 100 !important;
+}
+
+.check_in {
+    position: relative;
+    top: -68px;
+    left: 0px;
+}
+
+input[type='radio']:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #FF3333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #FF3333;
+}
+
+input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #FF3333;
+    cursor: pointer;
+}
+
+.form-check-inline label {
+    cursor: pointer;
+}
+
+.sucsess {
+    margin: 35% auto 0 auto;
+}
+
+.error_block {
+    margin: 30% auto 0 auto;
+}
+
+.sucsess_img {
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+}
+
+.sucsess_img:focus, .sucsess_img:active {
+    background: transparent;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.none{
+    display: none;
+}
+
+.sucsess_greats {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 15%;
+}
+
+.error_woops {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.sucsess_link {
+    display: block;
+    text-align: center;
+}
+
+.error_link {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sucsess_link a {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #1C82F7;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.error_link a {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #1C82F7;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.error_404 {
+    letter-spacing: 7px;
+    font-size: 124px;
+    font-family: 'Karla', sans-serif, bold;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media screen and (max-width: 801px) {
+    .company_name {
+        padding: 0;
+        text-align: center;
+    }
+
+    .content_page_1{
+        width: 100%;
+    }
+
+    .last_block {
+        margin-left: 5px !important;
+    }
+
+    .header_content_1 {
+        width: 85.5%;
+    }
+
+    .header_content {
+        width: 85.5%;
+    }
+
+    .header_content1 {
+        width: 85.5%;
+    }
+
+    .picture1 {
+        font-size: 12px;
+        padding: 20px 0px 15px 0px;
+    }
+
+    .page_content {
+        margin: 0px auto 0 2.2%;
+    }
+
+    .tumbs_pic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tumbs {
+        margin-right: 5px;
+    }
+
+    .tumbs_pic {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .product_choise h1 {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .old_prise {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .new_prise {
+        margin-left: 5px;
+        font-size: 24px;
+    }
+
+    .propose_desc {
+        margin-left: 15px;
+    }
+
+    .size_block {
+        margin-left: 15px;
+    }
+
+    .size_choise {
+        width: 149%;
+    }
+
+    .size_choise button {
+        padding: 6px 4px;
+        font-size: 12px;
+    }
+
+    .color_choise {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .color_choise img {
+        width: 70%;
+    }
+
+    .about_product {
+        margin-top: 30px;
+    }
+
+    .special_offer_content {
+        padding: 20px 16px;
+        width: 212px;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .title_line_2 h3 {
+        font-size: 18px;
+        padding: 0 0px 0 15px;
+    }
+
+    .line_2_block {
+        width: 54%;
+    }
+
+    .line_2_img {
+        height: 211px;
+        width: 250px;
+    }
+
+    .title_line_2 {
+        width: 77%;
+    }
+
+    .about_img img {
+        height: 100%;
+        width: 12%;
+    }
+
+    .spans_about_img {
+        margin-top: 20px;
+    }
+
+    .title_line_2 h4 {
+        margin-top: 15px;
+        padding: 0 0 0 15px;
+        font-size: 20px;
+    }
+
+    .about_img {
+        margin: 0;
+    }
+
+    .quote {
+        margin-left: 6%;
+    }
+
+    .title_line_2 p {
+        padding: 12px 0 0 15px;
+    }
+
+    .up_title {
+        padding: 80px 0 20px 0;
+    }
+
+    #content_six h3 {
+        font-size: 21px;
+    }
+
+    .email {
+        margin-left: -20px;
+        width: 435px;
+    }
+
+    .email_block {
+        width: 100%;
+    }
+
+    .left-side-header {
+        width: 20%;
+    }
+
+    .product_name {
+        width: 18vw;
+    }
+
+    .double_input {
+        width: 21.44vw !important
+    }
+
+    .picture {
+        padding: 0;
+    }
+
+    .single_input {
+        width: 44vw !important;
+    }
+
+    .page_one_title {
+        font-size: 30px;
+    }
+
+    .title_name {
+        font-size: 20px;
+    }
+
+    .circle {
+        padding-left: 120px;
+    }
+
+    .sneakers {
+        top: 18%;
+        left: 15%;
+    }
+
+    .works_card {
+        padding: 10px 10px;
+    }
+
+    .works_part {
+        margin: 0 5px;
+        width: 22.3%;
+    }
+
+    .works_name {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .works_desc {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .works_line {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .works_text button {
+        font-size: 14px;
+        width: 88px;
+        margin-bottom: 0;
+    }
+
+    .description_2 {
+        width: 64.5%;
+    }
+
+    .description {
+        width: 64.5%;
+
+    }
+
+    .description h3 {
+        font-size: 24px;
+
+    }
+
+    .page_four_title {
+        font-size: 23px;
+    }
+
+    .four_clear {
+        width: 23%;
+    }
+
+    .big_line {
+        width: 94px;
+        height: 4px;
+    }
+
+    .four_p_text p {
+        font-size: 14px;
+    }
+
+    .four_p_clear {
+        width: 25%;
+    }
+
+    .four_p_text p {
+        font-size: 14px;
+    }
+
+    .four_button button {
+        margin: 42% 15% 0 0;
+        width: 161px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    #content_four {
+        height: 350px;
+        margin-top: 25px;
+    }
+
+    #content_five {
+        margin-top: 70px;
+    }
+
+    .last_span {
+        padding-right: 250px !important;
+    }
+
+    .example_1 span {
+        font-size: 18px;
+        padding-right: 240px;
+    }
+
+    .title_line_1 h3 {
+        font-size: 16px;
+        padding: 52px 0 0 0;
+    }
+
+    .example_1 {
+        width: 62%;
+        margin-right: 25px;
+    }
+
+    .example_2_img {
+        margin-top: 50px;
+
+    }
+
+    .line_1 {
+        margin-right: -60%;
+    }
+
+    .example_2_content img {
+        width: 39%;
+    }
+
+    .line_2 {
+        margin-top: 45px;
+    }
+
+    #content_six {
+        margin-top: 30px;
+        height: 360px;
+    }
+
+    .down_text {
+        margin-top: 15px;
+    }
+
+    .logo_down {
+        margin-top: 30px;
+    }
+
+    .logo_footer_part {
+        width: 85%;
+    }
+
+    .logo_footer {
+        width: 34%;
+    }
+
+    .contacts_name {
+        padding-top: 115px;
+    }
+
+    .mailto1 {
+        margin-top: 9px;
+        margin-right: 20px;
+    }
+
+    .down_text {
+        width: 100%;
+    }
+
+    .contacts_footer, .socials_footer {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .social_icon_inst, .social_icon_fb {
+        display: none;
+    }
+
+    .product_item {
+        margin-left: 0;
+    }
+
+    .basic {
+        margin-left: 20px;
+    }
+
+    .product_order {
+        padding-left: 20px;
+    }
+
+    .buy_btn {
+        width: 29vw;
+    }
+
+    .last_block {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 802px) and (max-width: 1025px) {
+    .page_one_title {
+        font-size: 38px;
+    }
+
+    .product_item {
+        margin-left: 2%;
+    }
+
+    .product_choise h1 {
+        font-size: 27px;
+    }
+
+    .product_choise {
+        width: 41%;
+    }
+
+    .header_content {
+        width: 85.5%;
+    }
+
+    .header_content_1 {
+        width: 85.5%;
+    }
+
+    .tumbs_pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tumbs {
+        margin-right: 0px;
+    }
+
+    .product_name {
+        width: 21vw;
+    }
+
+    .double_input {
+        width: 24.44vw !important
+    }
+
+    .single_input {
+        width: 50vw !important;
+    }
+
+    .buy_btn {
+        width: 29vw;
+    }
+
+    .company_name {
+        padding-left: 0;
+    }
+
+    .title_name {
+        font-size: 20px;
+    }
+
+    .circle {
+        padding-left: 186px;
+    }
+
+    .description {
+        width: 60%;
+    }
+
+    .works_part {
+        margin: 0px 9px;
+        width: 21.8%;
+    }
+
+    .works_text button {
+        width: 95px;
+    }
+
+    .description_2 {
+        width: 75%;
+    }
+
+    .works_master {
+        height: 93%;
+    }
+
+    .page_four_title {
+        font-size: 30px;
+        padding: 60px 0 0 0;
+    }
+
+    .four_clear {
+        width: 26%;
+    }
+
+    .four_p_text {
+        width: 80%;
+        padding-left: 14%;
+    }
+
+    .line_2_img {
+        height: 323px;
+        width: 370px;
+    }
+
+    .big_line {
+        width: 150px;
+        height: 5px;
+    }
+
+    .four_p_clear {
+        width: 14%;
+    }
+
+    #content_four {
+        height: 360px;
+    }
+
+    .four_p_text p {
+        font-size: 16px;
+    }
+
+    .four_button button {
+        margin: 31% 17% 0 0;
+        width: 171px;
+        height: 47px;
+        font-size: 16px;
+    }
+
+    #content_five {
+        margin-top: 60px;
+    }
+
+    .title_line_1 h3 {
+        font-size: 22px;
+        padding: 88px 0 0 0px;
+    }
+
+    .example_1 {
+        width: 65%;
+        margin-right: 20px;
+    }
+
+    .example_1 span {
+        font-size: 13px;
+        padding-right: 1vh;
+    }
+
+    .example_2_img {
+        margin-top: 50px;
+
+    }
+
+    .line_1 {
+        margin-right: -42%;
+    }
+
+    .example_2_content img {
+        width: 60%;
+    }
+
+    .line_2 {
+        margin-top: 50px;
+    }
+
+    .line_2_img img {
+        width: 100%;
+    }
+
+    .line_2_block {
+        width: 41%;
+    }
+
+    .title_line_2 {
+        width: 65%;
+    }
+
+    .email_block {
+        width: 95%;
+    }
+
+    #content_six {
+        margin-top: 50px;
+    }
+
+    .logo_footer {
+        width: 37%;
+    }
+
+    .logo_down {
+        margin-top: 50px;
+    }
+
+    .down_text {
+        width: 100%;
+        margin-top: 20px;
+        padding-right: 5px;
+    }
+
+    .mailto1 {
+        margin-top: 10px;
+    }
+
+    .mailto1 a, .mailto2 a {
+        font-size: 12px;
+    }
+
+    .works_card {
+        padding: 20px 10px 0 10px;
+    }
+
+    .color_choise {
+        font-size: 12px;
+    }
+
+    .color_choise img {
+        width: 80%;
+    }
+
+    .last_block {
+        margin: 0 auto !important;
+        padding-left: 5px;
+    }
+
+    .page_content {
+        margin: 0px auto 0 2.2%;
+    }
+
+    .size_block, .product_choise h1, .propose_desc, .old_prise {
+        margin-left: 5px;
+    }
+
+    .special_offer {
+        margin-left: 0;
+    }
+
+    .contacts_footer, .socials_footer {
+        padding: 0 5px;
+    }
+
+    .socials_footer {
+        padding-left: 0;
+    }
+
+    .about_product {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1280px) {
+    .page_one_title {
+        font-size: 54px;
+    }
+
+    .socials_footer {
+        padding-left: 15px;
+    }
+
+    .product_choise {
+        width: 38%;
+    }
+
+    .title_name {
+        font-size: 28px;
+    }
+
+
+    .description {
+        width: 50%;
+    }
+
+    .works_part {
+        margin: 0 10px;
+    }
+
+    .product_choise h1 {
+        font-size: 30px;
+    }
+
+    .works_card {
+        padding: 15px;
+    }
+
+    .changed_diff {
+        width: 50% !important;
+    }
+
+    .header_content {
+        width: 65.5%;
+    }
+
+    .header_content_1 {
+        width: 82.5%;
+    }
+
+    .all_sneackers, .last_block {
+        width: 100%
+    }
+
+    .works_text button {
+        margin-bottom: 0;
+    }
+
+    .description_2 {
+        width: 55%;
+    }
+
+    #content_four {
+        margin-top: 20px;
+        height: 350px;
+    }
+
+    .page_four_title {
+        font-size: 40px;
+        padding: 60px 0 0 155px;
+    }
+
+    .four_clear {
+        width: 26%;
+    }
+
+    .big_line {
+        height: 5px;
+    }
+
+    .four_p_clear {
+        width: 26%;
+    }
+
+    .four_p_text {
+        width: 63%;
+    }
+
+    .four_button button {
+        margin: 30% 18% 0 0;
+    }
+
+    #content_five {
+        margin-top: 60px;
+    }
+
+    .example_1 {
+        width: 44%;
+        margin-right: 50px;
+    }
+
+    .title_line_1 {
+        width: 70%;
+    }
+
+    .title_line_1 h3 {
+        font-size: 24px;
+        padding: 90px 0 0 0;
+    }
+
+    .example_1 span {
+        padding-right: 2vh;
+    }
+
+    .line_2_img {
+        height: 250px;
+        width: 330px;
+    }
+
+    .example_1 {
+        width: 84%;
+        margin-right: 30px;
+    }
+
+    .title_line_2 {
+        width: 81%;
+    }
+
+    #content_six {
+        margin-top: 50px;
+    }
+
+    .email_block {
+        width: 100%;
+    }
+
+    .logo_down {
+        margin-top: 50px;
+    }
+
+    .logo_footer {
+        width: 37%;
+    }
+
+    .down_text {
+        width: 91%;
+    }
+
+    .contacts_name {
+        padding-top: 140px;
+    }
+
+    .mailto1 {
+        margin-top: 0px;
+    }
+
+    .company_name {
+        padding-left: 0;
+    }
+
+    .line_1 {
+        margin-right: -24%;
+    }
+
+    .example_2_content img {
+        width: 63%;
+    }
+
+    .line_2 {
+        margin-top: 50px;
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .page_one_title {
+        font-size: 58px;
+    }
+
+    .header_content_1 {
+        width: 83.5%;
+    }
+
+    .socials_footer {
+        padding-left: 15px;
+    }
+
+    .line_2_img {
+        height: 280px;
+        width: 344px;
+    }
+
+    .product_choise {
+        width: 38%;
+    }
+
+    .title_name {
+        font-size: 30px;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .works_part {
+        margin: 0 10px;
+    }
+
+    .works_card {
+        padding: 15px;
+    }
+
+    .changed_diff {
+        width: 50% !important;
+    }
+
+    .all_sneackers, .last_block {
+        width: 100%
+    }
+
+    .works_text button {
+        margin-bottom: 0;
+    }
+
+    .description_2 {
+        width: 55%;
+    }
+
+    #content_four {
+        margin-top: 20px;
+        height: 350px;
+    }
+
+    .page_four_title {
+        font-size: 42px;
+        padding: 60px 0 0 155px;
+    }
+
+    .four_clear {
+        width: 26%;
+    }
+
+    .big_line {
+        height: 5px;
+    }
+
+    .four_p_clear {
+        width: 26%;
+    }
+
+    .four_p_text {
+        width: 63%;
+    }
+
+    .four_button button {
+        margin: 30% 18% 0 0;
+    }
+
+    #content_five {
+        margin-top: 60px;
+    }
+
+    .example_1 {
+        width: 44%;
+        margin-right: 50px;
+    }
+
+    .title_line_1 {
+        width: 69%;
+    }
+
+    .example_1 span {
+        padding-right: 3vh;
+    }
+
+    .about_img img {
+        width: 12%;
+    }
+
+    .title_line_1 h3 {
+        font-size: 24px;
+        padding: 110px 0 0 0;
+    }
+
+    .example_1 {
+        width: 84%;
+        margin-right: 30px;
+    }
+
+    .title_line_2 {
+        width: 81%;
+    }
+
+    #content_six {
+        margin-top: 50px;
+    }
+
+    .email_block {
+        width: 100%;
+    }
+
+    .logo_down {
+        margin-top: 50px;
+    }
+
+    .logo_footer {
+        width: 37%;
+    }
+
+    .down_text {
+        width: 91%;
+    }
+
+    .contacts_name {
+        padding-top: 140px;
+    }
+
+    .mailto1 {
+        margin-top: 0px;
+    }
+
+    .company_name {
+        padding-left: 0;
+    }
+
+
+    .line_1 {
+        margin-right: -24%;
+    }
+
+    .example_2_content img {
+        width: 63%;
+    }
+
+    .line_2 {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1381px) and (max-width: 1900px) {
+    .works_part {
+        margin: 0 10px;
+    }
+
+    .changed_diff {
+        width: 50%;
+    }
+
+    .all_sneackers, .last_block {
+        width: 100%
+    }
+
+    .description {
+        width: 40%;
+    }
+
+    #content_three {
+        height: 1150px;
+    }
+
+    .works_text button {
+        margin-bottom: 0;
+    }
+
+    .title_line_1 h3 {
+        padding: 160px 0 0 0;
+        font-size: 26px;
+    }
+
+    .page_four_title {
+        font-size: 46px;
+        padding: 60px 0 0 130px;
+    }
+
+    .four_clear {
+        width: 26%;
+    }
+
+    .four_p_clear {
+        width: 26%;
+    }
+
+    .four_button button {
+        margin: 23% 19% 0 0;
+    }
+
+    .line_1 {
+        margin-right: -31%;
+    }
+
+    .example_2_content img {
+        width: 90%;
+    }
+
+    .example_1 {
+        width: 64%;
+        margin-right: 58px;
+    }
+
+    .line_2 {
+        margin-top: 70px;
+    }
+
+    .line_2_img {
+        height: 290px;
+        width: 390px;
+    }
+
+    .spans_about_img {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .title_line_2 h3 {
+        padding: 0 20px 0 25px;
+    }
+
+    .about_img img {
+        width: 11%;
+    }
+
+    .about_img {
+        margin-left: 0px;
+        padding: 0 0 0 15px;
+    }
+
+    .title_line_2 h4 {
+        padding: 0 0 0 30px;
+        margin-top: 15px;
+    }
+
+    .title_line_2 p {
+        padding: 12px 0 0 29px;
+    }
+
+    .down_text {
+        width: 80%;
+    }
+
+    .mailto1 {
+        margin-top: 17px;
+    }
+
+    .logo_footer {
+        width: 49%;
+    }
+
+    .socials_footer {
+        padding-left: 20px;
+    }
+}

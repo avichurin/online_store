@@ -1,0 +1,81 @@
+{{> header }}
+<div id="cardedit">
+    <form role="form" action="{{routePath}}/{{firm_id}}/model/{{model_id}}/sneakers/edit" method="post">
+        <div class="usercard flex-container">
+            <div class="fotoedit">
+                <div class="fileinput fileinput-new imageinput" data-provides="fileinput">
+
+                </div>
+            </div>
+            <div class="textedit">
+                <input type="hidden" name="sneakers[id]" value="{{#if sneakers}}{{sneakers.id}}{{/if}}">
+                <input type="hidden" name="sneakers[model_id]" value="{{#if model_id}}{{model_id}}{{/if}}">
+                <table>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="alias">Alias</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="alias" type="text"
+                                                                                   placeholder="Alias"
+                                                                                   name="sneakers[alias]"
+                                                                                   required minlength="3" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           sneakers}}{{sneakers.alias}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="name">Name</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="name" type="text"
+                                                                                   placeholder="Name"
+                                                                                   name="sneakers[name]"
+                                                                                   required minlength="3" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           sneakers}}{{sneakers.name}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="price">Price</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="price" type="text"
+                                                                                   placeholder="Price"
+                                                                                   name="sneakers[price]"
+                                                                                   required minlength="3" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           sneakers}}{{sneakers.price}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="desc">Desc</label></td>
+                        <td class="textleft"><span class="inputdescription"><textarea id="desc"
+                                                                                      placeholder="Description"
+                                                                                      name="sneakers[desc]"
+                                                                                      required autocomplete="off">{{#if
+                                sneakers}}{{sneakers.desc}}{{/if}}</textarea></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="priority">Priority</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="priority" type="text"
+                                                                                   placeholder="Priority"
+                                                                                   name="sneakers[priority]"
+                                                                                   required minlength="1" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           sneakers}}{{sneakers.priority}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="flex-container actions-button-1">
+            <button type="button" onclick="window.location.href='{{cancelLink}}';"
+                    class=" checkboline btn btn-lg btn-edit btn-danger">Cancel
+            </button>
+            <button type="submit" class="checkboline paddingplus30 btn btn-lg btn-edit btn-success">Save</button>
+        </div>
+    </form>
+</div>
+{{> footer}}
+
+{{#if isNotValidate}}
+    <div class="myalert">
+        <span class="error">{{message}}</span>
+    </div>
+{{/if}}
+
+<script src="/js/scripts/edit_sneakers.js"></script>

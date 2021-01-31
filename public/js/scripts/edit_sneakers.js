@@ -1,0 +1,1 @@
+hideAlert();function hideAlert(){let inputs=document.querySelectorAll(".inputdescription input");for(let i=0;i<inputs.length;i++){inputs[i].addEventListener("input",function(){if(document.querySelector(".myalert")&&(document.querySelector(".myalert").style.display!="none")){document.querySelector(".myalert").style.display="none"}})}}

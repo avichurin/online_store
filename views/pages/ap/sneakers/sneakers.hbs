@@ -1,0 +1,26 @@
+{{> header }}
+<div class="flex-container panel-body">
+    <div class="textedit flex-container content-block">
+        <div class="place flex-container content-block">
+            <span class="smallfont">Alias</span>
+            <small class="label">{{sneakers.alias}}</small>
+            <span class="smallfont">Name</span>
+            <small class="label">{{sneakers.name}}</small>
+            <span class="smallfont">Price</span>
+            <small class="label">{{sneakers.price}}</small>
+            <span class="smallfont">Desc</span>
+            <small class="label">{{sneakers.desc}}</small>
+        </div>
+    </div>
+
+    <div class="tabs flex-container content-block">
+
+        {{#if baseUser.permissionsObject.read}}
+            <a href="{{routePath}}/{{firm_id}}/model/{{model_id}}/sneakers/edit/{{sneakers.id}}" class="edittab btn-success btn">Edit</a>
+            <button onclick="showModal('Confirm deleting sneakers: <b>{{sneakers.alias}}</b>', '{{routePath}}/{{firm_id}}/model/{{model_id}}/sneakers/delete/{{sneakers.id}}'); event.stopPropagation()"
+                    class="deltab btn-danger btn btn-lg">Delete
+            </button>
+        {{/if}}
+
+    </div>
+</div>

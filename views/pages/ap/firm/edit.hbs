@@ -1,0 +1,72 @@
+{{> header }}
+<div id="cardedit">
+    <form role="form" action="{{routePath}}/edit" method="post">
+        <div class="usercard flex-container">
+            <div class="fotoedit">
+                <div class="fileinput fileinput-new imageinput" data-provides="fileinput">
+                    <div class="foto">
+                        {{#if firm.photo}}
+                            <img src="{{firm.photo}}">
+                        {{else}}
+                            <img src="images/image.png">
+                        {{/if}}
+                    </div>
+                    <label class="btn btn-primary selectory" for="my-file-selector">
+                        <input id="my-file-selector" type="file" name="foto" accept=".jpg, .jpeg, .png, .gif, .svg">Select
+                        file
+                    </label>
+                </div>
+            </div>
+            <div class="textedit">
+                <input type="hidden" name="firm[id]" value="{{#if firm}}{{firm.id}}{{/if}}">
+                <input type="hidden" name="firm[file]" value="">
+                <table>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="alias">Alias</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="alias" type="text"
+                                                                                   placeholder="Alias"
+                                                                                   name="firm[alias]"
+                                                                                   required minlength="3" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           firm}}{{firm.alias}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="name">Name</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="name" type="text"
+                                                                                   placeholder="Name" name="firm[name]"
+                                                                                   required minlength="3" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           firm}}{{firm.name}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                    <tr class="textdescription">
+                        <td class="textleft paddleftlus20"><label for="priority">Priority</label></td>
+                        <td class="textleft"><span class="inputdescription"><input id="priority" type="text"
+                                                                                   placeholder="Priority"
+                                                                                   name="firm[priority]"
+                                                                                   required minlength="1" maxlength="30"
+                                                                                   value="{{#if
+                                                                                           firm}}{{firm.priority}}{{/if}}"
+                                                                                   autocomplete="off"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="flex-container actions-button-1">
+            <button type="button" onclick="window.location.href='{{cancelLink}}';"
+                    class=" checkboline btn btn-lg btn-edit btn-danger">Cancel
+            </button>
+            <button type="submit" class="checkboline paddingplus30 btn btn-lg btn-edit btn-success">Save</button>
+        </div>
+    </form>
+</div>
+{{> footer}}
+
+{{#if isNotValidate}}
+    <div class="myalert">
+        <span class="error">{{message}}</span>
+    </div>
+{{/if}}
+
+<script src="/js/scripts/edit_firms.js"></script>
